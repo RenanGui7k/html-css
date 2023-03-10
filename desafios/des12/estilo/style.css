@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
+:root {
+    --fonte1: 'Courier New', Courier, monospace;
+    --fonte2: Verdana, Geneva, Tahoma, sans-serif;
+}
 * {
     margin: 0px;
-    padding: 0px;
+    padding: 0px; 
 }
 
 html, body {
@@ -19,6 +23,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte1);
+    font-size: 4em;
 }
 
 header > p {
@@ -40,11 +46,16 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 2em;
 }
 
 section.normal {
     background-color: white;
     color: black;
+}
+
+section.normal > pre {
+    font-family: var(--fonte2);
 }
 
 section.imagem {
@@ -55,6 +66,7 @@ section.imagem {
 section.imagem > pre {
     width: 300px;
     background-color: rgba(0, 0, 0, 0.308);
+    font-family: var(--fonte2);
 }
 
 footer {
@@ -66,5 +78,4 @@ footer {
 
 pre {
     white-space: pre-line;
-    font-family: Arial, Helvetica, sans-serif;
 }
