@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: yellow;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        HIERARQUIA DE TABELAS
+        TABLE = TABELA
+            TABLE ROW = LINHA DE TABELA
+                TABLE HEADER = CABEÇALHO
+                TABLE DATA = DADOS DA TABELA
+    -->
+    <h1>Tabela</h1>
+    <table>
+        <tr>
+            <th scope="col">Sim</th>
+            <th scope="col">Nao</th>
+            <th scope="col">Se pa</th>
+            <th scope="col">AH</th>
+        </tr>
+        <tr>
+            <th scope="row">RX</th>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <th scope="row">TR</th>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <th scope="row">PT</th>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+</body>
+</html>
